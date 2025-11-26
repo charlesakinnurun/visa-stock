@@ -1,5 +1,5 @@
 # Visa Stock
-![Visa-Logo](/visa_logo.png)
+![Visa-Logo](/visa_image.jpg)
 
 ## Procedures
 - Import Libraries
@@ -10,15 +10,32 @@
     - matplotlib
     - yfinance
 - Data Acquisition
+    - Data aquired from the Yahoo Finance api (yfinance)
 - Data Preprocessing
+    - Check for missing values
+    - Check for duplicated rows
 - Feature Engineering
 - Pre-Training Visualization
 - Feature Engineering
 - Data Splitting
+    - Split data into training (70%) and testing sets (30%)
+    - shuffle=False is cruical for time series data to maintain the chronological order
 - Data Scaling
+    - Initializae the StandardScaler
+    - Scaling is essential for models sensitive to feature magnitudes
 - Model Comparison
+    - Logistic Regression
+    - K-Nearest Neighbors
+    - Decison Tree
+    - Random Forest
+    - Gaussian Naive Bayes
+    - Support Vector Machine
 - Post-Training Visualization
 - Hyperparameter Tuning
+    - n_estimators
+    - max_depth
+    - min_samples_split
+    - min_samples_leaf
 - Final Visualization
 - Prediction Input for New Data
 
