@@ -27,6 +27,9 @@ TICKER = "V"
 print(f"Downloading data for {TICKER}..........")
 data = yf.download(TICKER,period="5y")
 
+# %%
+data.to_csv("visa_stock_data.csv")
+
 # %% [markdown]
 # Data Preprocessing
 
